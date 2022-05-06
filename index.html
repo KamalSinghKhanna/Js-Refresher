@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        //uncoment console.log line by line 
+        //variable
+        let a = 34;
+        let b = 'This is String in js';
+        // console.log(a);
+        // console.log(b);
+
+        //var && let
+        var x = 34;
+        var x = 35;
+        // console.log(x);
+
+//when you will uncomment down lines you will get an error - Uncaught SyntaxError: redeclaration of let y
+//but you will not get that error for the var keywords 
+        let y  = 4;
+        // let y  = 5;
+        // console.log(y);
+
+// const - you can't declare multiple variable with same name
+        const name = "kamal";
+        // const name = "kamal";
+        // console.log(name);
+
+    //Data types ->
+    // numbers
+    // objects
+    // String
+    // Booleans
+    // undefined
+    // null
+    
+    //Functions
+    function hello() {
+        // console.log("hey kamal");
+    }
+    hello(); //calling this function
+
+
+    //object
+    let obj = {
+        name: "kamal",
+        age: 20
+    }
+
+    // console.log(obj.name);
+    // console.log(obj.age);
+
+    //functions inside Object
+
+    let obj1 = {
+        name: "kamal",
+        age: 20,
+        func: function myfunc(name) {
+            console.log(`My name is ${name}`)
+        }
+    }
+    // console.log(obj1.func("Kamal singh khanna"));
+
+
+    //events
+
+    document.addEventListener("click", function click(){
+        // alert("Hello, welcome to Js refresher");
+        // console.log(confirm("do you want to learn Js"));
+    })
+
+    //Strings
+    name: "kamal";
+    // console.log(name);
+    //Arrays
+    let array = [23, 34, 56, 23];
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        // console.log(element);
+        
+    }
+    array.forEach(element => {
+        
+    });
+
+    // arraow func
+    //In normal functions we cannot use this keyword
+    // console.log(this);
+    function myfunc(name) {
+            // console.log("the name is " + this);
+        }
+
+    // In arrow func we can use this keyword  for examle
+    let myfunc1 = (name) =>{
+        console.log("the name is " + this);
+        console.log("the name is " + this.name);
+    }  
+    // myfunc1("kamal");
+
+    //callback
+    setTimeout(() => {
+        console.log("yeah!")
+    }, 3000);
+    console.log("I am in console")
+    //promises
+    
+
+    </script>
+</head>
+<body>
+    <h1>I am learning Js.</h1>
+</body>
+</html>
