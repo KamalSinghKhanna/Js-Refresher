@@ -53,3 +53,62 @@ Higher order functions follow this same principle.
 - We may not want to decide exactly what some of our functionality is until we 
 run our function
 */
+
+
+
+//Now suppose we have a function copyArrayAndMultiplyBy2
+
+function copyArrayAndMultiplyBy2(array) {
+const output = [];
+for (let i = 0; i < array.length; i++) {
+output.push(array[i] * 2);
+}
+return output;
+}
+const myArray = [1,2,3];
+const result = copyArrayAndMultiplyBy2(myArray);
+// console.log(result)
+
+// What if want to copy array and divide by 2?
+function copyArrayAndDivideBy2(array) {
+ const output = [];
+ for (let i = 0; i < array.length; i++) {
+ output.push(array[i] / 2);
+ }
+ return output;
+ }
+const myArray1 = [1,2,3];
+const result1 = copyArrayAndDivideBy2(myArray);
+// console.log(result1);
+
+// Or add 3?
+function copyArrayAndAdd3(array) {
+ const output = [];
+ for (let i = 0; i < array.length; i++) {
+ output.push(array[i] + 3);
+ }
+ return output;
+ }
+const myArray2 = [1,2,3];
+const result2 = copyArrayAndAdd3(myArray);
+// console.log(result2);
+
+
+//What principle are we breaking --> DRY (don't repeat yourself)
+
+// We could generalize our function - So we pass in our specific 
+// instruction only when we run copyArrayAndManipulate !
+
+function copyArrayAndManipulate(array, instruction){
+    const output =  [];
+    for (let i = 0; i < array.length; i++) {
+        output.push(instruction(array[i]))
+    }
+    return output;
+}
+function multiplyBy2(input){ 
+    return input*2;
+}
+const myArray3 = [1,2,3];
+const result3 = copyArrayAndManipulate(myArray3, multiplyBy2);
+// console.log(result3);
