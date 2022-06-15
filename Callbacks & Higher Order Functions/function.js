@@ -112,3 +112,6 @@ function multiplyBy2(input){
 const myArray3 = [1,2,3];
 const result3 = copyArrayAndManipulate(myArray3, multiplyBy2);
 // console.log(result3);
+
+
+
