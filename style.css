@@ -1,0 +1,48 @@
+.control{
+    margin: 50px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: start;
+    flex-direction: column;
+    background-color: rgb(220, 220, 167);
+    padding: 20px;
+}
+
+.box{
+    display: flex;
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+}
+
+
+#product-name{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 20px;
+    width: 200px;
+    /* background-color: red; */
+}
+
+#btn{
+    width: 70px;
+    background-color: rgb(241, 241, 10);
+}
+
+input.warning{
+    background-color: rgb(248, 191, 145);
+}
+
+#remaining-chars.warning {
+    color: rgb(211, 109, 26);
+}
+input.error{
+    background-color: rgb(174, 75, 60);
+}
+
+#remaining-chars.error {
+    color: rgb(199, 5, 5);
+}
+

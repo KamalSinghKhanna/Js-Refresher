@@ -6,16 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js</title>
-    <script src="App.js" defer></script>
+    <script src="loop.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 id="heading">Hi there!</h1>
-    <p>I'm new</p>
-    <p class="p-tag">
-        This is a
-        <a id="external-link" href="#">link</a>
-    </p>
+  <form action="">
+    <div class="control">
+        <label for="product-name">Product Name</label>
+        <input type="text" id="product-name" class="product-name" name="product-name" maxlength="60">
+        <span id="charCount">
+            <span id="remaining-chars">60</span>/60
+        </span>
+        <button id="btn">submit</button>
+    </div>
+  </form>
 </body>
 
 </html>
