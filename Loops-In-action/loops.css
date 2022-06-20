@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(55, 55, 55);
+}
+h1{
+    margin: 20px;
+    color: yellow;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: fit-content;
+    width: 600px;
+    background-color: rgb(251, 234, 234);
+    margin: 20px 50px;
+    border-radius: 5px;
+}
+
+h2{
+    font-weight: bolder;
+    margin-top: 5px;
+    font-size: 37px;
+}
+.p1{
+    margin-top: 15px;
+    /* margin-bottom: 15px; */
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.input-box{
+    width: 70px;
+    height: 50px;
+    border-radius: 4px;
+    margin-top: 10px;
+    /* margin-bottom: 30px; */
+    border: rgb(144, 142, 142) solid 0.5px;
+}
+
+.btn{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 50px;
+    width:fit-content; 
+    background-color: rgba(224, 224, 0, 0.948);
+    color: black;
+    font-size:0.4cm;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.output{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    background-color: yellow;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    font-size: 2cm;
+}
+
+
+.text-p{
+    margin: 5px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p a{
+    text-decoration: none;
+    color: yellow
+}
+
+.highlight{
+    background-color: rgb(63, 4, 141);
+    padding: 0.25rem;
+    color: rgb(242, 111, 111);
+}
