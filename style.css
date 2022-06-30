@@ -1,7 +1,7 @@
-.control{
+/* .control{
     margin: 50px;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: start;
     flex-direction: column;
     background-color: rgb(220, 220, 167);
@@ -23,7 +23,7 @@ label {
     margin-bottom: 30px;
     height: 20px;
     width: 200px;
-    /* background-color: red; */
+    background-color: red;
 }
 
 #btn{
@@ -45,4 +45,22 @@ input.error{
 #remaining-chars.error {
     color: rgb(199, 5, 5);
 }
+ */
 
+
+ #carousel-example{
+    width: 100%;
+    max-width: 50rem;
+    height: 30rem;
+    margin: 2rem auto;
+ }
+
+ #carousel-example img{
+    height: 30rem;
+    object-fit: cover;
+ }
+
+ #newsletter{
+    max-width: 30rem;
+    margin: 4rem auto;
+ }

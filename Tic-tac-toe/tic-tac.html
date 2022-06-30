@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tic-tac.css">
+    <script src="./Script/game-board2.js" defer></script>
+    <script src="./Script/main.js" defer></script>
+    <script src="./Script/tic-tac.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Play, Tic, Tac, Toe</h1>
+        <h4>Built with HTML, CSS, JavaScript and - of course -lots of love!</h4>
+    </div>
+    <div class="overlay overlay1">
+        <h1>Choose your name</h1>
+        <h3>Player name</h3>
+        <input type="text" name="" placeholder="enter your name" id="player-name-1">
+       <div class="btn">
+        <button class="mod-btn cancel-btn">Cancel</button>
+        <button class="mod-btn confirm-btn">Confim</button>
+       </div>
+    </div>
+    <div class="overlay overlay2">
+        <h1>Choose your name</h1>
+        <h3>Player name</h3>
+        <input type="text" name="" placeholder="enter your name"  id="player-name-2">
+       <div class="btn">
+        <button class="mod-btn cancel-btn">Cancel</button>
+        <button class="mod-btn confirm-btn">Confim</button>
+       </div>
+    </div>
+    <div class="body">
+        <div class="player-info">
+            <div class="player" id="player-1">
+                <h4>Player 1</h4>
+                <h1>PLAYER NAME</h1>
+                <span>X</span>
+                <button id="edit-btn1">Edit</button>
+            </div>
+            <div class="player" id="player-2">
+                <h4>Player 2</h4>
+                <h1>PLAYER NAME</h1>
+                <span>0</span>
+                <button id="edit-btn2">Edit</button>
+            </div>
+        </div>
+
+       <div class="start-game">
+        <button>Start New Game</button>
+       </div>
+
+       <h4>Its your turn <strong class="player-name-turn">Player Name</strong></h4>
+       
+       <div class="game-board">
+        <div data-index="1" class="board-box"></div>
+        <div data-index="2" class="board-box"></div>
+        <div data-index="3" class="board-box"></div>
+        <div data-index="4" class="board-box"></div>
+        <div data-index="5" class="board-box"></div>
+        <div data-index="6" class="board-box"></div>
+        <div data-index="7" class="board-box"></div>
+        <div data-index="8" class="board-box"></div>
+        <div data-index="9" class="board-box"></div>
+       </div>
+       
+    </div>
+    </div>
+    
+</body>
+</html>
