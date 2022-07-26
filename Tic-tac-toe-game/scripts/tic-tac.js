@@ -1,6 +1,7 @@
 let editedPlayer = 0;
 let activePlayer = 0;
 let currrentRound = 1;
+let gameIsOver = false;
 const gameData = [
     [0, 0, 0],
     [0, 0, 0],
@@ -29,6 +30,8 @@ const gameBoardElement = document.getElementById("game-board");
 const formElement = document.querySelector("form");
 const gameAreaElement = document.getElementById("active-game");
 const startNewGAmeBtnElement = document.getElementById("start-game-btn");
+const gameOverElement = document.getElementById("game-over");
+
 
 editButton1.addEventListener("click", showModal);
 editButton2.addEventListener("click", showModal);
@@ -38,6 +41,7 @@ cancelButton.addEventListener("click", closeModal);
 formElement.addEventListener("submit", updatePlayerName);
 
 startNewGAmeBtnElement.addEventListener("click", startNewGame);
+
 
 // for (const gameFieldElement of gameFieldElements) {
 //     gameFieldElement.addEventListener("click", selectGameField)

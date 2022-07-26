@@ -2,6 +2,7 @@ function showModal(event) {
   editedPlayer = +event.target.dataset.playerid;
   modalComponent.style.display = "block";
   backDrop.style.display = "block"
+  
 }
 
 function closeModal() {

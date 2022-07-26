@@ -48,7 +48,7 @@ input.error{
  */
 
 
- #carousel-example{
+  #carousel-example{
     width: 100%;
     max-width: 50rem;
     height: 30rem;
@@ -57,10 +57,30 @@ input.error{
 
  #carousel-example img{
     height: 30rem;
-    object-fit: cover;
+    /* object-fit: cover; */
  }
 
  #newsletter{
     max-width: 30rem;
     margin: 4rem auto;
+ } 
+
+
+
+ body{
+    text-align: center;
+    font-family: sans-serif;
  }
+
+section{
+    width: 100%;
+    max-width: 50rem;
+    margin: 2rem auto;
+    
+}
+
+.img-main{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
